@@ -1,0 +1,79 @@
+body {
+  margin: 200px 200px;
+}
+.mini__grid {
+
+  display: grid;
+  grid-template-columns: repeat(12, 10px);
+  grid-template-rows: repeat(8, 10px);
+  grid-template-areas:
+                      "a a a a a a a a"
+                      "a a a a a a a a"
+                      "a a a a a a a a"
+                      "a a a a a a a a"
+                      "b b b b c d d d"
+                      "b b b b c d d d"
+                      "b b b b c d d d"
+                      "b b b b c d d d"
+}
+.mini__grid__items {
+  border: 1px solid black;
+}
+.mini__item1 {
+  grid-area: a;
+  border-bottom: none;
+}
+
+.mini__item1 p {
+  font-size: 20px;
+  margin-left: 10px;
+  margin-top: 10px;
+  letter-spacing: 6px;
+  font-weight: bold;
+}
+
+.mini__item2 {
+  border-top: none;
+  grid-area: b;
+}
+.mini__item2 p {
+  transform: rotate(-90deg);
+  text-align: center;
+  letter-spacing: 1px;
+  /* margin-left: 15px; */
+  /* margin-right: 12px; */
+  margin-top: 6px;
+}
+.mini__item3 {
+  grid-area: c;
+  border-top: 4px solid black;
+  background-color: black;
+}
+.mini__item4 {
+  grid-area: d;
+  border-top: 4px solid black;
+}
+
+.mini__grid__transform {
+  transition: 2s;
+}
+.mini__grid__transform1 {
+  transition: 0.2s;
+  border-top: 4px solid black;
+}
+.mini__grid__transform2 {
+  transition: 0.5s;
+  grid-column-start: b;
+  grid-column-end: d;
+
+}
+.mini__grid__transform3 {
+  transition: 0.5s;
+  grid-column-start: a;
+  grid-column-end: 1;
+  grid-row: a / b;
+}
+.mini__grid__transform4 {
+  display: none;
+  transition: 0.5s;
+}

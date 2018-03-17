@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>CSS Grid</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <!-- <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+    <body>
+      <header>
+
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><span class="hamburger"></span>&#9776;</a>
+          <a class="home" href="#">Home</a>
+          <a href="#">CSS Grid</a>
+          <a class="about" href="#">About Me</a>
+          <a href="#">...</a>
+        </div>
+
+        <div class="top__nav__hamburger">
+          <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        </div>
+
+      </header>
+
+    <div class="overlay">
+
+      <div class="hero__wrapper">
+
+
+          <div class="about__me item hide">
+            <div class="image__me">
+              <img src="img/moz_doggo.jpg" alt="">
+              <h2>Great to meet you!<h2>
+                <p>My name is Maciej and I've built this page as my final project for General Assembly's Front End Web Development class. I took the course in early 2018 in San Francisco. At FEWD I've learned how to use CSS Grid and applied the learning here. All the resources listed on this page will help you learn the Grid.</p>
+                <p>Let's connect on <span><a id="linkedin" href="https://www.linkedin.com/in/mpluta/">LinkedIn</a></span></p>
+            </div>
+          </div>
+        <div class="item item__hero">
+          <h1>What is CSS Grid?</h1>
+          <p>CSS Grid Layout excels at dividing a page into major regions, or defining the relationship in terms of size, position, and layer, between parts built with HTML containers. CSS Grid Layout is easy to learn and use. It’s quickly changing the game for web design and development.</p>
+          <p>This page will give you all the resources and links you need to get started with your first grid. You’ll also find here some resources on Firefox DevTools layout panel, which is the best way to get a glimpse of how the Grid works on your page.</p>
+          <p>Lastly, feel free to inspect this site, as it was also built using CSS Grid. Get started by reading about the Grid on MDN and share the love for Grid.</p><br><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid" target="_blank">Learn more</a>
+        </div>
+      </div>
+
+
+      <div class="main__grid">
+        <div class="item item2"><h2>Layout Land</h2><p>If your design focused and like to learn by watching, Jen Simmons has released a series of videos that talk about the design and CSS Grid. These videos feature lots of great examples.</p> <a href="https://www.youtube.com/channel/UC7TizprGknbDalbHplROtag" target="_blank">Watch now</a></div>
+        <div class="item item3"><h2>Who's the Bos?</h2><p>Take part in an online course comprised of 25 videos, about 4 hours long. The course is 100% free, as it's content (and Wes's time) was sponsored by Mozilla.</p><a href="http://wesbos.com/announcing-my-css-grid-course/" target="_blank">Sign up now</a></div>
+        <div class="item item4"><h2>Replace Bootstrap Layouts with CSS Grid</h2><p>Quick read on the benefits of Grid layout, with usful tips on 12 column grid layout system.</p><a href="https://hacks.mozilla.org/2017/04/replace-bootstrap-layouts-with-css-grid/" target="_blank">Read the post</a></div>
+        <div class="item item5"><h2>Grid Layout in DevTools</h2><p>CSS Grid Layout panel lists all the available CSS Grid containers on the page and includes an overlay to help you visualize the grid itself, including grid line numbers and dimensions.</p><a href="https://mozilladevelopers.github.io/playground/css-grid/03-firefox-devtools" target="_blank">Learn more</a></div>
+        <div class="item item6"><h2>Rachel Andrew</h2><p>Rachel Andrew is a developer, speaker, and author. She is a member of the CSS Working Group and develops resources for learning about CSS Grid Layout.</p><a href="https://gridbyexample.com/" target="_blank">Learn more</a></div>
+        <div class="item item7"><h2>...a bit of history</h2><p>If you're ready for a longer read, here is a post on the story (and a bit of history) of the Grid came to be, brought to you by it's creators.</p><br><a href="http://alistapart.com/article/the-story-of-css-grid-from-its-creators" target="_blank">Learn more</a></div>
+      </div>
+
+    </div>
+      <footer class="">
+        <div class="footer__element">
+          <div class="footer__items fi_1"><p><a class="home" href="#">Home</a></p></div>
+          <div class="footer__items fi_2"><p><a href="#">CSS Grid</a></p></div>
+          <div class="footer__items fi_3"><p class="about"><a href="">About Me</a></p></div>
+          <div class="footer__items fi_4"><p><small>This was page was built for a final project for General Assembly Front End Web Development course it's author took in January through March of 2018.</small></p></div>
+        </div>
+      </footer>
+
+        <script src="js/vendor/jquery-3.3.1.js"></script>
+        <script src="js/main.js"></script>
+
+    </body>
+</html>
