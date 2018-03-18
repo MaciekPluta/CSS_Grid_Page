@@ -1,31 +1,33 @@
-// $(".mini__grid").hover(function() {
-//   $(".mini__grid").toggleClass("mini__grid__transform");
-//   $(".mini__item1").toggleClass("mini__grid__transform1");
-//   $(".mini__item3").toggleClass("mini__grid__transform3");
-//   $("#css").css("transform", "rotate(360deg)");
-//   $("#css").css("text-align", "center");
-//   $(".mini__item2").toggleClass("mini__grid__transform2");
-//   $(".mini__item4").toggleClass("mini__grid__transform4");
-// });
-console.log("js works");
-
 $(document).ready(function frame1(){
   // event.preventDefault();
-  console.log("hover");
-  $(".mini__item2").fadeIn("slow");
-  $(".mini__item3").delay(1000).fadeIn("slow");
-  $(".mini__item1").delay(1000).fadeOut("slow");
-  $(".mini__item4").delay(1000).fadeIn("slow");
-  $(".mini__item5").delay(1000).fadeIn("slow", function(){
-    
+  console.log("start");
+  $(".mini__item1").delay(1000).fadeIn("slow", function(){
+    console.log("frame 1");
+      $(".mini__item1").delay(1000).fadeOut(function(){
+        console.log("frame 2");
+        $(".mini__item2").delay(1000).fadeIn("slow");
+        $(".mini__item3").delay(1000).fadeIn("slow", function(){
+          console.log("frame 3");
+          $(".mini__item2").delay(500).fadeOut("fast");
+            $(".mini__item1").delay(1000).css("transform", "rotate(90deg)");
+            $(".mini__item1").delay(1000).fadeIn("slow", function(){
+              console.log("frame 4");
+              $(".mini__item2").delay(1000).css("grid-area", "g");
+              $(".mini__item2").fadeIn("slow");
+              $(".mini__item4").fadeIn("slow", function(){
+                console.log("frame 5");
+                  $(".mini__item1").delay(500).fadeOut("fast");
+                  $(".mini__item3").delay(500).fadeOut("fast");
+                  $(".mini__item5").delay(1000).fadeIn("slow");
+                  $(".mini__item6").delay(1000).fadeIn("slow", function(){
+                    console.log("frame 6");
+                    $(".mini__item2").delay(500).fadeOut("fast");
+                    $(".mini__item5").delay(500).fadeOut("fast");
+                    frame1();
+            });
+          });
+        });
+      });
+    });
   });
 });
-
-// animate function below
-
-// $("box").animate({
-//
-// }, function() {
-//
-//
-// });

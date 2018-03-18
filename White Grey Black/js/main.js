@@ -48,10 +48,11 @@ $(".item")
 $(".about").click(function(event){
   event.preventDefault();
   $(window).scrollTop(0);
-  $(".about__me").fadeIn("slow");
-  $(".item__hero").fadeOut("slow");
-  console.log("about clicked");
-  closeNav();
+  $(".about__me").fadeIn("slow", function(){
+    $(".item__hero").fadeOut("slow");
+    console.log("about clicked");
+    closeNav();
+  });
 });
 
 // About me Fade Out Home clicked
@@ -59,13 +60,50 @@ $(".about").click(function(event){
 $(".home").click(function(event){
   event.preventDefault();
   $(window).scrollTop(0);
-  $(".about__me").fadeOut("slow");
-  $(".item__hero").fadeIn("slow");
-  console.log("about clicked");
-  closeNav();
+  $(".about__me").fadeOut("slow", function(){
+    $(".item__hero").fadeIn("slow");
+    console.log("about clicked");
+    closeNav();
+  });
 });
 
 $(".overlay").click(function() {
   console.log("closing nav");
   closeNav();
+});
+
+// Mini Grid Animation
+
+$(document).ready(function frame1(){
+  // event.preventDefault();
+  console.log("start");
+  $(".mini__item1").delay(1000).fadeIn("slow", function(){
+    console.log("frame 1");
+      $(".mini__item1").delay(1000).fadeOut(function(){
+        console.log("frame 2");
+        $(".mini__item2").delay(1000).fadeIn("slow");
+        $(".mini__item3").delay(1000).fadeIn("slow", function(){
+          console.log("frame 3");
+          $(".mini__item2").delay(500).fadeOut("fast");
+            $(".mini__item1").delay(1000).css("transform", "rotate(90deg)");
+            $(".mini__item1").delay(1000).fadeIn("slow", function(){
+              console.log("frame 4");
+              $(".mini__item2").delay(1000).css("grid-area", "g");
+              $(".mini__item2").fadeIn("slow");
+              $(".mini__item4").fadeIn("slow", function(){
+                console.log("frame 5");
+                  $(".mini__item1").delay(500).fadeOut("slow");
+                  $(".mini__item3").delay(500).fadeOut("slow");
+                  $(".mini__item5").delay(1000).fadeIn("slow");
+                  $(".mini__item6").delay(1000).fadeIn("slow", function(){
+                    console.log("frame 6");
+                    $(".mini__item2").delay(500).fadeOut("slow");
+                    $(".mini__item5").delay(500).fadeOut("slow");
+                    frame1();
+            });
+          });
+        });
+      });
+    });
+  });
 });

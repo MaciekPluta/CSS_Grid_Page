@@ -1,5 +1,5 @@
 body {
-  margin: 200px 200px;
+  /* margin: 200px 200px; */
 }
 .mini__grid {
   position: relative;
@@ -20,21 +20,32 @@ body {
 /* ---- Frame 1 ---- */
 
 .mini__item1 {
-  grid-area: e;
-  /* display: none; */
-}
-.mini__item2 {
-  display: none;
-  grid-area: d;
-}
-.mini__item3 {
   display: none;
   grid-area: f;
 }
+
+.mini__item2 {
+  display: none;
+  grid-area: e;
+}
+
+.mini__item3 {
+
+  display: none;
+  grid-area: d;
+}
+
 .mini__item4 {
   display: none;
+  grid-area: i;
 }
+
 .mini__item5 {
+  display: none;
+  grid-area: a;
+}
+
+.mini__item6 {
   display: none;
   grid-area: c;
 }
