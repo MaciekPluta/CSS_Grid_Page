@@ -2,23 +2,56 @@ body {
   margin: 200px 200px;
 }
 .mini__grid {
-
+  position: relative;
   display: grid;
-  grid-template-columns: repeat(12, 10px);
-  grid-template-rows: repeat(8, 10px);
+  grid-template-columns: repeat(3, 10px);
+  grid-template-rows: repeat(3, 10px);
+  /* grid-gap: 1px; */
   grid-template-areas:
-                      "a a a a a a a a"
-                      "a a a a a a a a"
-                      "a a a a a a a a"
-                      "a a a a a a a a"
-                      "b b b b c d d d"
-                      "b b b b c d d d"
-                      "b b b b c d d d"
-                      "b b b b c d d d"
+                      "a b c"
+                      "d e f"
+                      "g h i"
 }
+
 .mini__grid__items {
   border: 1px solid black;
 }
+
+/* ---- Frame 1 ---- */
+
+.mini__item1 {
+  grid-area: e;
+  /* display: none; */
+}
+.mini__item2 {
+  display: none;
+  grid-area: d;
+}
+.mini__item3 {
+  display: none;
+  grid-area: f;
+}
+.mini__item4 {
+  display: none;
+}
+.mini__item5 {
+  display: none;
+  grid-area: c;
+}
+/* ---- Frame 2 ---- */
+
+
+
+
+
+
+
+
+
+
+/* old code */
+
+/*
 .mini__item1 {
   grid-area: a;
   border-bottom: none;
@@ -40,8 +73,6 @@ body {
   transform: rotate(-90deg);
   text-align: center;
   letter-spacing: 1px;
-  /* margin-left: 15px; */
-  /* margin-right: 12px; */
   margin-top: 6px;
 }
 .mini__item3 {
@@ -76,4 +107,4 @@ body {
 .mini__grid__transform4 {
   display: none;
   transition: 0.5s;
-}
+} */

@@ -9,6 +9,9 @@ function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
 
+// $("#mySidenav").on("click", function(){
+//
+// toggleClass("NavOpen"});
 // Main Grid Items Code
 
 
