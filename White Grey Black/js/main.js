@@ -1,23 +1,26 @@
-
 // Top Nav Code
 
-function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-}
+// $(".top__nav__hamburger").on("click", function(){
+//   $(".sidenav").slideToggle()
+//   $(".sidenav").toggleClass(".sidenav__open");
+// });
 
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-}
+$(".top__nav__hamburger").on("click", function(event){
+  event.preventDefault();
+  $(".ni_1").delay(500).toggleClass("not__visible");
+  $(".ni_2").toggleClass("not__visible");
+  $(".ni_3").toggleClass("not__visible");
+  console.log("nav toggle");
+});
 
-// $("#mySidenav").on("click", function(){
-//
-// toggleClass("NavOpen"});
-// Main Grid Items Code
 
+
+// Body Code
 
 $(document).ready(function() {
     $("body").fadeIn("fast");
 });
+
 
 // $(".item").on("click", function() {
 //   $(this).toggleClass("clicked");
@@ -36,10 +39,10 @@ $(".item")
     $(this).addClass("mouseover");
   })
   .mouseout(function() {
-    $( this ).removeClass("mouseover");
+    $(this).removeClass("mouseover");
   });
 
-  $("#home").on("click", function() {
+  $(".home").on("click", function() {
       $(window).scrollTop(0);
   });
 
@@ -51,7 +54,6 @@ $(".about").click(function(event){
   $(".about__me").fadeIn("slow", function(){
     $(".item__hero").fadeOut("slow");
     console.log("about clicked");
-    closeNav();
   });
 });
 
@@ -60,17 +62,15 @@ $(".about").click(function(event){
 $(".home").click(function(event){
   event.preventDefault();
   $(window).scrollTop(0);
-  $(".about__me").fadeOut("slow", function(){
-    $(".item__hero").fadeIn("slow");
+  $(".about__me").fadeOut(300, function(){
+    $(".item__hero").fadeIn(300);
     console.log("about clicked");
-    closeNav();
   });
 });
 
-$(".overlay").click(function() {
-  console.log("closing nav");
-  closeNav();
-});
+// $(".overlay").click(function() {
+//   console.log("closing nav");
+// });
 
 // Mini Grid Animation
 

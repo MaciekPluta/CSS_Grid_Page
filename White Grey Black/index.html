@@ -13,22 +13,14 @@
   </head>
     <body>
       <header>
-
-        <div id="mySidenav" class="sidenav">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
-            <span class="hamburger">
-             </span>&#9776;</a>
-          <a class="home" href="#">Home</a>
-          <a href="#">CSS Grid</a>
-          <a class="about" href="#">About Me</a>
-          <a href="#">...</a>
+        <div class="top__nav">
+          <div class="nav__items not__visible ni_1"><p><a class="home" href="#">Home</a></p></div>
+          <div class="nav__items not__visible ni_2"><p><a href="#">CSS Grid</a></p></div>
+          <div class="nav__items not__visible ni_3"><p class="about"><a href="">About Me</a></p></div>
+          <div class="top__nav__hamburger"><a href=""><span>&#9776;</span></a></div>
         </div>
-
-        <div class="top__nav__hamburger">
-          <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-        </div>
-
       </header>
+
     <div class="overlay">
 
       <div class="hero__wrapper">
@@ -52,7 +44,7 @@
             <div class="mini__grid__items mini__item5"></div>
             <div class="mini__grid__items mini__item6"></div>
           </div>
-          
+
           <p>CSS Grid Layout excels at dividing a page into major regions, or defining the relationship in terms of size, position, and layer, between parts built with HTML containers. CSS Grid Layout is easy to learn and use. It’s quickly changing the game for web design and development.</p>
           <p>This page will give you all the resources and links you need to get started with your first grid. You’ll also find here some resources on Firefox DevTools layout panel, which is the best way to get a glimpse of how the Grid works on your page.</p>
           <p>Lastly, feel free to inspect this site, as it was also built using CSS Grid. Get started by reading about the Grid on MDN and share the love for Grid.</p>
