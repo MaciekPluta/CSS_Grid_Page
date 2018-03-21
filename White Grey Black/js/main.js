@@ -1,10 +1,5 @@
 // Top Nav Code
 
-// $(".top__nav__hamburger").on("click", function(){
-//   $(".sidenav").slideToggle()
-//   $(".sidenav").toggleClass(".sidenav__open");
-// });
-
 $(".top__nav__hamburger").on("click", function(event){
   event.preventDefault();
   $(".ni_1").delay(500).toggleClass("not__visible");
@@ -13,25 +8,11 @@ $(".top__nav__hamburger").on("click", function(event){
   console.log("nav toggle");
 });
 
-
-
 // Body Code
 
 $(document).ready(function() {
     $("body").fadeIn("fast");
 });
-
-
-// $(".item").on("click", function() {
-//   $(this).toggleClass("clicked");
-//   console.log("worked");
-// });
-
-// $(".item").mouseover(function() {
-//   $(this).addClass(".mouseover");
-//   console.log("worked");
-//   $(this).addClass(".mouseover");
-// });
 
 
 $(".item")
@@ -67,10 +48,6 @@ $(".home").click(function(event){
     console.log("about clicked");
   });
 });
-
-// $(".overlay").click(function() {
-//   console.log("closing nav");
-// });
 
 // Mini Grid Animation
 
