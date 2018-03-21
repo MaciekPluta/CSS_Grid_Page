@@ -47,7 +47,7 @@ $(".home").click(function(event){
     $(".item__hero p").fadeIn(300);
     $(".mini__grid").css("grid-template-columns", "repeat(3, 12px)");
     $(".mini__grid").css("grid-template-rows", "repeat(3, 12px)");
-    $(".mini__grid").css("padding", "0");
+    $(".mini__grid").css("padding-bottom", "-10px");
     $(".mini__grid").css("max-width", "50px");
     console.log("about clicked");
   });
